@@ -1,3 +1,20 @@
-#title
+# THE PRODUCT
 
-I started this while following the CSS-course of Schmedtmann. Trying to implement the new acquired knowledge, above all box-shadow (and text-shadow)
+Side site while following the CSS-course of Schmedtmann.
+
+Trying to apply the new staff I learned:
+
+- box-shadow
+- text-shadow
+- color-system
+-
+
+## Online
+
+## Technologies
+
+HTML + CSS
+
+## Responsive
+
+Not yet.

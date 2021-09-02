@@ -6,14 +6,16 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 COLOR SYSTEM
-MAIN COLOR: #f1b8cb
-MAIN COLOR TAILWIND: #FBCFE8
-MAIN COLOR OPEN COLORS: #fcc2d7
+MAIN COLOR: #f1b8cb // the color of the background of the picture
+
+MAIN COLOR OPEN COLORS: #fcc2d7 // I picked up this one
+// MAIN COLOR TAILWIND: #FBCFE8
 
 SECONDARY COLOR: #A61E4D; PINK9 OPENCOLOR
-secondary colorb´-b: #62484b;
+// SECONDARY COLOR-B: #62484b;
 
-ICONS PINK6 #e64980 
+TERTIARY COLOR: ICONS & HOVER  #e64980 PINK6
+
 GREY: #343a40
 GREY: 
 */
@@ -70,7 +72,8 @@ h2 {
 
 .btn:hover,
 .btn:active {
-  background-color: #099268;
+  background-color: #e64980;
+  color: #fff;
 }
 
 .btn--big {
