@@ -65,6 +65,7 @@ h2 {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
+  border-radius: 100px;
 }
 
 .btn:hover,
@@ -118,6 +119,7 @@ h1 {
 
 img {
   width: 100%;
+  border-radius: 6px;
 }
 
 /* FEATURES */
@@ -146,6 +148,11 @@ img {
   background-color: #fcc2d7;
   color: #343a40;
   padding: 24px;
+  border-radius: 12px;
+}
+
+.testimonial-section img {
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -169,6 +176,12 @@ img {
 
 .chair {
   box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .chair-box {
   padding: 24px;
