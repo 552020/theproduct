@@ -1,0 +1,214 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+COLOR SYSTEM
+MAIN COLOR: #f1b8cb
+MAIN COLOR TAILWIND: #FBCFE8
+MAIN COLOR OPEN COLORS: #fcc2d7
+
+SECONDARY COLOR: #A61E4D; PINK9 OPENCOLOR
+secondary colorb´-b: #62484b;
+
+ICONS PINK6 #e64980 
+GREY: #343a40
+GREY: 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #fcc2d7;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header,
+section {
+  margin-bottom: 48px;
+}
+
+h2 {
+  margin-bottom: 48px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+
+.btn:link,
+.btn:visited {
+  color: #fff;
+  color: #62484b;
+  background-color: #fcc2d7;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
+
+/* HEADER */
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  margin-top: 48px;
+}
+
+.header-text-box {
+  align-self: center;
+}
+
+h1 {
+  /* 44 / 52 / 62 / 74 */
+  font-size: 74px;
+  margin-bottom: 24px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  /* text-shadow: 10px 20px 30px rgba(0, 0, 0, 0.07); */
+  /* text-shadow: 10px 15px 0px rgba(0, 0, 0, 0.07); */
+  text-shadow: 2px 2px 0px #62484b, 4px 4px 0px #e64980, 6px 6px 0px #fcc2d7,
+    7px 7px 0px #e4e07d;
+}
+
+.header-text {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+/* FEATURES */
+.features-icon {
+  stroke: #62484b;
+  stroke: #fcc2d7; /*MAINCOLOR*/
+  /* PINK6 */
+  stroke: #e64980;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+}
+
+.features-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.features-text {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* TESTIMONIAL */
+.testimonial-section {
+  background-color: #fcc2d7;
+  color: #343a40;
+  padding: 24px;
+}
+
+.testimonial-box {
+  grid-column: 2 / -1;
+  align-self: center;
+}
+
+.testimonial-box h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* CHAIRS */
+
+.chair {
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.07);
+}
+.chair-box {
+  padding: 24px;
+}
+
+h3 {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.chair-details {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.chair-details li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.chair-details li:last-child {
+  margin-bottom: 0;
+}
+
+.chair-icon {
+  stroke: #e64980;
+  width: 24px;
+  height: 24px;
+}
+
+.chair-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+footer {
+  margin-bottom: 48px;
+  font-size: 14px;
+  color: #495057;
+}
