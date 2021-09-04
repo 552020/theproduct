@@ -6,18 +6,19 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 COLOR SYSTEM
-MAIN COLOR: #f1b8cb // the color of the background of the picture
 
 MAIN COLOR OPEN COLORS: #fcc2d7 // I picked up this one
-// MAIN COLOR TAILWIND: #FBCFE8
+
+// MAIN COLOR CANDIDATE - AVOCADO-PIC: #f1b8cb // the color of the background of the picture
+// MAIN COLOR CANDIDATE - TAILWIND PALETTE: #FBCFE8
 
 SECONDARY COLOR: #A61E4D; PINK9 OPENCOLOR
 // SECONDARY COLOR-B: #62484b;
 
 TERTIARY COLOR: ICONS & HOVER  #e64980 PINK6
 
-GREY: #343a40
-GREY: 
+GREY: #343a40 // INSTEAD OF BLACK FOR THE TEXT
+
 */
 
 * {
@@ -26,9 +27,8 @@ GREY:
   box-sizing: border-box;
 }
 
-/* ------------------------ */
 /* GENERAL STYLES */
-/* ------------------------ */
+
 body {
   font-family: sans-serif;
   font-family: "Inter", sans-serif;
@@ -108,10 +108,16 @@ h1 {
   margin-bottom: 44px;
   line-height: 1.1;
   letter-spacing: -1px;
+
+  /*TEXT SHADOW*/
+
   /* text-shadow: 10px 20px 30px rgba(0, 0, 0, 0.07); */
+
   /* text-shadow: 10px 15px 0px rgba(0, 0, 0, 0.07); */
-  text-shadow: 2px 2px 0px #62484b, 4px 4px 0px #e64980, 6px 6px 0px #fcc2d7,
-    7px 7px 0px #e4e07d;
+
+  /* text-shadow: 2px 2px 0px #62484b, 4px 4px 0px #e64980, 6px 6px 0px #fcc2d7,
+    7px 7px 0px #e4e07d; */
+
   text-shadow: 0 1px 0px #e64980, 1px 0 0px #fcc2d7, 1px 2px 1px #e64980,
     2px 1px 1px #fcc2d7, 2px 3px 2px #e64980, 3px 2px 2px #fcc2d7,
     3px 4px 2px #e64980, 4px 3px 3px #fcc2d7, 4px 5px 3px #e64980,
@@ -189,18 +195,18 @@ img {
   color: #c2255c;
 }
 
-/* CHAIRS */
+/* PRODUCTS */
 
-.chair {
+.product {
   box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.07);
   border-radius: 6px;
 }
 
-.chair img {
+.product img {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-.chair-box {
+.product-box {
   padding: 32px;
 }
 
@@ -209,30 +215,30 @@ h3 {
   font-size: 20px;
 }
 
-.chair-details {
+.product-details {
   list-style: none;
   font-size: 14px;
   margin-bottom: 48px;
 }
 
-.chair-details li {
+.product-details li {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 14px;
 }
 
-.chair-details li:last-child {
+.product-details li:last-child {
   margin-bottom: 0;
 }
 
-.chair-icon {
+.product-icon {
   stroke: #e64980;
   width: 24px;
   height: 24px;
 }
 
-.chair-price {
+.product-price {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -265,4 +271,87 @@ footer {
   position: absolute;
   top: 40%;
   left: 5vw;
+}
+
+/* ACCORDION */
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  /* box-shadow: 0 0 32px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 32px;
+
+  padding: 24px;
+}
+
+.number,
+.text {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.number {
+  color: #ced4da;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: #e64980;
+}
+
+.hidden-box {
+  grid-column: 2;
+
+  display: none;
+}
+
+.hidden-box p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.hidden-box ul {
+  color: #868e96;
+  margin-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* OPEN STATE */
+
+.open {
+  border-top: 4px solid #fcc2d7;
+  color: #a61e4d;
+}
+
+.open .hidden-box {
+  display: block;
+}
+
+.open .number,
+.open .text {
+  color: #a61e4d;
+}
+
+/*ACCORDION ICONS*/
+
+.icon {
+  display: none;
+}
+
+.show {
+  display: block;
 }
