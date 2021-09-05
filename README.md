@@ -13,7 +13,7 @@ Trying to apply the new staff I learned:
 
 ## Technologies
 
-HTML + CSS
+HTML + CSS + JS
 
 ## Responsive
 
