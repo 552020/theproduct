@@ -7,7 +7,7 @@ Trying to apply the new staff I learned:
 - box-shadow
 - text-shadow
 - color-system
--
+- new dynamic tabbed feature-component
 
 ## [Online](https://the-product.netlify.app/)
 

@@ -19,7 +19,216 @@ TERTIARY COLOR: ICONS & HOVER  #e64980 PINK6
 
 GREY: #343a40 // INSTEAD OF BLACK FOR THE TEXT
 
+OPENCOLOR PALETTE
+PINK 0 : #fff0f6
+1: #ffdeeb
+2: #fcc2d7
+3: #faa2c1
+4: #f783ac
+5: #f06595
+6: #e64980
+7: #d6336c
+8: #c2255c
+9: #a61e4d
+
+BACKGROUND PRODUCT PICS
+#bbeae0
+#9ad7f3
+#fdd4dc
+
+
+
+
 */
+
+/* IMPORT START */
+
+:root {
+  --color-primary: #5ec576;
+  --color-secondary: #ffcb03;
+  --color-tertiary: #ff585f;
+  --color-primary-darker: #4bbb7d;
+  --color-secondary-darker: #ffbb00;
+  --color-tertiary-darker: #fd424b;
+  --color-primary-opacity: #5ec5763a;
+  --color-secondary-opacity: #ffcd0331;
+  --color-tertiary-opacity: #ff58602d;
+  --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+  --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+html {
+  /* font-size: 62.5%; */
+}
+
+/* body {
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  background-color: #f3f3f3;
+} */
+
+/* GENERAL ELEMENTS */
+
+/* .section {
+  padding: 15rem 3rem; 
+  border-top: 1px solid #ddd;
+
+  transition: transform 1s, opacity 1s;
+} */
+
+/* .section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}  */
+
+/* .section__title {
+  max-width: 80rem;
+  max-width: 10px;
+  margin: 0 auto 8rem auto;
+} */
+
+/* .section__description {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+} */
+
+/* .section__header {
+  font-size: 4.operations__tab--1ont-weight: 500;
+} */
+
+.btn {
+  /* display: inline-block; */
+  /* background-color: var(--color-primary); */
+  /* font-size: 1.6rem; */
+  /* font-family: inherit; */
+  /* font-weight: 500; */
+  /* border: none; */
+  /* padding: 1.25rem 4.5rem; */
+  /* border-radius: 10rem; */
+  /* cursor: pointer; */
+  /* transition: all 0.3s; */
+}
+
+.btn:hover {
+  /* background-color: var(--color-primary-darker); */
+}
+
+.btn--text {
+  /* display: inline-block; */
+  /* background: none; */
+  /* font-size: 1.7rem; */
+  /* font-family: inherit; */
+  /* font-weight: 500; */
+  /* color: var(--color-primary); */
+  /* border: none; */
+  /* border-bottom: 1px solid currentColor; */
+  /* padding-bottom: 2px; */
+  /* cursor: pointer; */
+  /* transition: all 0.3s; */
+}
+
+p {
+  /* color: #666; */
+}
+
+/* This is BAD for accessibility! Don't do in the real world! */
+button:focus {
+  outline: none;
+}
+
+img {
+  /* transition: filter 0.5s; */
+}
+
+.lazy-img {
+  /* filter: blur(20px); */
+}
+
+/* OPERATIONS */
+.operations {
+  /* max-width: 100rem; */
+  /* margin: 12rem auto 0 auto; */
+
+  background-color: #fff0f6;
+  /* background-color: yellow; */
+  border-radius: 12px;
+}
+
+.operations__tab-container {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.operations__tab {
+  /* margin-right: 2.5rem; */
+  transform: translateY(-50%);
+}
+
+.operations__tab span {
+  margin-right: 1rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.operations__tab--active {
+  transform: translateY(-66%);
+}
+
+.operations__content {
+  display: none;
+
+  /* JUST PRESENTATIONAL */
+  font-size: 18px;
+  padding: 2.5rem 7rem 6.5rem 7rem;
+}
+
+.operations__content--active {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  column-gap: 3rem;
+  row-gap: 0.5rem;
+}
+
+.operations__header {
+  font-size: 30px;
+  font-weight: 500;
+  align-self: center;
+}
+
+.operations__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.operations__icon svg {
+  height: 2.75rem;
+  width: 2.75rem;
+}
+
+.operations__content p {
+  grid-column: 2;
+}
+
+.operations__icon--1 {
+  background-color: #bbeae0;
+}
+.operations__icon--2 {
+  background-color: #c5f6fa;
+}
+.operations__icon--3 {
+  background-color: #ffdeeb;
+}
+
+/* IMPORT STOP */
 
 * {
   margin: 0;
@@ -34,7 +243,6 @@ html {
 }
 
 body {
-  font-family: sans-serif;
   font-family: "Inter", sans-serif;
   color: #343a40;
   border-bottom: 8px solid #fcc2d7;
@@ -56,10 +264,28 @@ h2 {
   letter-spacing: -0.5px;
 }
 
+.feature h2 {
+  margin-bottom: 80px;
+}
+
 .grid-3-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
+}
+
+/* .btn has to be repeated cause the buttons of the tabs-component are <buttons> and not anchor elements. On buttons :link doesn't apply */
+.btn {
+  color: #fff;
+  color: #62484b;
+  background-color: #fcc2d7;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:link,
@@ -146,13 +372,26 @@ img {
 
 /* FEATURES */
 .features-icon {
-  stroke: #62484b;
-  stroke: #fcc2d7; /*MAINCOLOR*/
-  /* PINK6 */
-  stroke: #e64980;
+  /* stroke: #e64980; */
   width: 32px;
   height: 32px;
   margin-bottom: 24px;
+}
+
+.features-icon-tabbed {
+  stroke: #f783ac;
+  stroke: #a61e4d;
+}
+.features-icon-tabbed--1 {
+  stroke: #087f5b;
+}
+
+.features-icon-tabbed--2 {
+  stroke: #0b7285;
+}
+
+.features-icon-tabbed--3 {
+  stroke: #e64980;
 }
 
 .features-title {
@@ -358,4 +597,33 @@ footer {
 
 .show {
   display: block;
+}
+
+/* IMPORTED */
+
+.operations__tab--1 {
+  background-color: #c3fae8;
+}
+
+.operations__tab--1:hover {
+  background-color: #96f2d7;
+  color: #62484b;
+}
+
+.operations__tab--2 {
+  background-color: #c5f6fa;
+}
+
+.operations__tab--2:hover {
+  background-color: #99e9f2;
+  color: #62484b;
+}
+
+.operations__tab--3 {
+  background-color: #ffdeeb;
+}
+
+.operations__tab--3:hover {
+  background-color: #fcc2d7;
+  color: #62484b;
 }
