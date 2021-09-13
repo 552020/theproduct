@@ -156,6 +156,8 @@ img {
   background-color: #fff0f6;
   /* background-color: yellow; */
   border-radius: 1.2rem;
+
+  transition: all 0.3s;
 }
 
 .operations__tab-container {
@@ -288,6 +290,8 @@ h2 {
   border-radius: 10rem;
   border: none;
   cursor: pointer;
+
+  transition: all 0.3s;
 }
 
 .btn:link,
@@ -563,12 +567,14 @@ footer {
 }
 
 .hidden-box p {
+  font-size: 1.4rem;
   line-height: 1.6;
   margin-bottom: 2.4rem;
   font-weight: bold;
 }
 
 .hidden-box ul {
+  font-size: 1.4rem;
   color: #868e96;
   margin-left: 2rem;
 
@@ -607,6 +613,7 @@ footer {
 
 .operations__tab--1 {
   background-color: #c3fae8;
+  transition: all 0.3s;
 }
 
 .operations__tab--1:hover {
@@ -616,6 +623,7 @@ footer {
 
 .operations__tab--2 {
   background-color: #c5f6fa;
+  transition: all 0.3s;
 }
 
 .operations__tab--2:hover {
@@ -625,6 +633,7 @@ footer {
 
 .operations__tab--3 {
   background-color: #ffdeeb;
+  transition: all 0.3s;
 }
 
 .operations__tab--3:hover {
